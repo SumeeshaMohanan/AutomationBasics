@@ -28,3 +28,24 @@ public class CheckBoxMultipleSelection {
 	}
 
 }
+
+
+//Another Method
+/*
+ * driver.get("https://selenium.obsqurazone.com/check-box-demo.php");
+		//select one check box first.now select all the checkbox in one go
+		WebElement chekBox=driver.findElement(By.id("gridCheck"));
+		chekBox.click();
+		boolean selected=chekBox.isSelected();
+		System.out.println(selected);
+		
+		List<WebElement> AllCheckBoxes = driver.findElements(By.xpath("//input[@type='checkbox']"));
+	    //System.out.println("Number of Check boxes : "+ Integer.toString(AllCheckBoxes.size()));
+	         
+	    for(WebElement ele:AllCheckBoxes)
+	    {
+	    	
+	        ele.click();
+	    }
+	    System.out.println("All check boxes have been checked");
+ */
