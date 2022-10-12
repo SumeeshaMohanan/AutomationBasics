@@ -15,7 +15,7 @@ public class CheckBoxMultipleSelection {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://selenium.obsqurazone.com/check-box-demo.php");
 		List<WebElement> selectcheck = driver.findElements(By.className("check-box-list"));
-		selectcheck.get(0).click();//when we are using the findelemnts we cannot directly type selectcheck.click()
+		selectcheck.get(0).click();//when we are using the findelements we cannot directly type selectcheck.click()
 		//we have to first mention the index and then click.
 		for(int i=0; i<selectcheck.size(); i++)//here we are traversing through the chekboxes
 		{

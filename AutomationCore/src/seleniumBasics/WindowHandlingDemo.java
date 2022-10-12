@@ -17,11 +17,14 @@ public class WindowHandlingDemo {
 	
 		Set<String> s1 = driver.getWindowHandles();
 		for (String s : s1) {
-		    System.out.println(s);
+		   
+		    driver.switchTo().window(s);
+		
 		}
 
-		driver.switchTo().window("CDwindow-1F2E902649F96F40BE9776D1BC345E42");
+		
 	driver.close();
+	driver.switchTo().window(w1);
 		
 	}
 
