@@ -11,7 +11,7 @@ public class DragDropDemo {
 		String path=System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver", path+"\\resources\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://selenium.obsqurazone.com/index.php");
+		driver.get("https://the-internet.herokuapp.com/drag_and_drop");
 		driver.navigate().to("https://selenium.obsqurazone.com/drag-drop.php");
 		WebElement element = driver.findElement(By.xpath("//*[@id=\"todrag\"]/span[1]"));
 		Actions action = new Actions(driver);
